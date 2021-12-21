@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <div class="grid">
+            <div class="row no-gutters">
+                <div class="col l-1 m-0 c-0 side-bar">
+                    <a href="/" class="side-bar__logo-link">
+                        <svg class="side-bar__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120"><path fill="none" d="M0 0h24v24H0z"/><path d="M4.929 19.071A9.969 9.969 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929zM11 6v12h2V6h-2zM7 9v6h2V9H7zm8 0v6h2V9h-2z" fill="rgba(114,105,239,1)"/></svg>
+                    </a>
+                    <ul class="side-bar__list">
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <i class="far fa-user-circle"></i>
+                            </a>
+                        </li>
+                        <li class="side-bar__item side-bar__item--active">
+                            <a href="" class="side-bar__item-link">
+                                <i class="far fa-comment-alt"></i>
+                            </a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <i class="fas fa-users"></i>
+                            </a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <i class="far fa-id-card"></i>
+                            </a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-bar__list side-bar__list--bottom">
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <i class="fas fa-globe-americas"></i>
+                            </a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <i class="far fa-sun"></i>
+                            </a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <img src="./assets/img/avatar_1.jpg" alt="avatar" class="side-bar__item-avatar">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-12 c-12 chats">
+                    <div class="chats__wrap">
+                        <div class="chats__header-wrap">
+                            <h3 class="chats__title">Chats</h3>
+                            <div class="chats__search-wrap">
+                                <label for="" class="chats__search-label">
+                                    <i class="fas fa-search"></i>
+                                </label>
+                                <input type="text" class="chats__search-input" placeholder="Nhập để tìm kiếm">
+                            </div>
+                            <ul class="chats__contacts-list">
+                                <li class="chats__contacts-item chats__contacts-item--online">
+                                    <a href="#" class="chats__contacts-item-link">
+                                        <div class="chats__contacts-item-content-wrap">
+                                            <img src="./assets/img/avatar_1.jpg" alt="" class="chats__contacts-item-avatar">
+                                            <span class="chats__contacts-item-username">Phat Vinh</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__contacts-item chats__contacts-item--online">
+                                    <a href="#" class="chats__contacts-item-link">
+                                        <div class="chats__contacts-item-content-wrap">
+                                            <img src="./assets/img/avatar_1.jpg" alt="" class="chats__contacts-item-avatar">
+                                            <span class="chats__contacts-item-username">Phat Vinh</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__contacts-item chats__contacts-item--online">
+                                    <a href="#" class="chats__contacts-item-link">
+                                        <div class="chats__contacts-item-content-wrap">
+                                            <img src="./assets/img/avatar_1.jpg" alt="" class="chats__contacts-item-avatar">
+                                            <span class="chats__contacts-item-username">Phat Vinh</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__contacts-item chats__contacts-item--online">
+                                    <a href="#" class="chats__contacts-item-link">
+                                        <div class="chats__contacts-item-content-wrap">
+                                            <img src="./assets/img/avatar_1.jpg" alt="" class="chats__contacts-item-avatar">
+                                            <span class="chats__contacts-item-username">Phat Vinh</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__contacts-item chats__contacts-item--online">
+                                    <a href="#" class="chats__contacts-item-link">
+                                        <div class="chats__contacts-item-content-wrap">
+                                            <img src="./assets/img/avatar_1.jpg" alt="" class="chats__contacts-item-avatar">
+                                            <span class="chats__contacts-item-username">Phat Vinh</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__contacts-item chats__contacts-item--online">
+                                    <a href="#" class="chats__contacts-item-link">
+                                        <div class="chats__contacts-item-content-wrap">
+                                            <img src="./assets/img/avatar_1.jpg" alt="" class="chats__contacts-item-avatar">
+                                            <span class="chats__contacts-item-username">Phat Vinh</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        <h3 class="chats__sub-title">Recent</h3>
+                        </div>
+                        <div class="chats__chat-list-wrap">
+                            <ul class="chats__chats-list">
+                                <li class="chats__chats-item chats__chats-item--active">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap chats__chat-item-avatar-wrap--online">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                02:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                20:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap chats__chat-item-avatar-wrap--online">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                02:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item chats__chats-item--active">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap chats__chat-item-avatar-wrap--online">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                02:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                20:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap chats__chat-item-avatar-wrap--online">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                02:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item chats__chats-item--active">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap chats__chat-item-avatar-wrap--online">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                02:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                20:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="chats__chats-item">  
+                                    <a href="#" class="chats__chat-item-link">
+                                        <div class="chats__chat-item-wrap">
+                                            <div class="chats__chat-item-avatar-wrap chats__chat-item-avatar-wrap--online">
+                                                <img src="./assets/img/avatar_1.jpg" alt="" class="chats__chat-item-avatar">
+                                            </div>
+                                            <div class="chats__chat-item-content">
+                                                <h3 class="chats__chat-item-username">
+                                                    Huỳnh Vinh Phát
+                                                </h3>
+                                                <h5 class="chats__chat-item-chat-preview">
+                                                    Hế lô abcd...
+                                                </h5>
+                                            </div>
+                                            <span class="chats__chat-time">
+                                                02:30
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 m-0 c-0 chat-content">
+
+                </div>
+                <div class="col l-4 m-0 c-0 profile">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
