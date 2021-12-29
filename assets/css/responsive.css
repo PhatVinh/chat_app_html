@@ -1,0 +1,31 @@
+/* Moblie Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+/* Media query for sidebar only */
+@media (max-width: 1114px) {
+    .side-bar {
+        display: none;
+    }
+
+    .side-bar-mobile-tablet {
+        display: block;
+    }
+}
