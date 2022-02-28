@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
@@ -58,6 +59,11 @@
                         <li class="side-bar__item">
                             <a href="" class="side-bar__item-link">
                                 <i class="far fa-sun"></i>
+                            </a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="" class="side-bar__item-link">
+                                <i class="fas fa-sign-out-alt"></i>
                             </a>
                         </li>
                         <li class="side-bar__item">
@@ -352,8 +358,30 @@
                             <li class="chat-content-header__action-item show-profile-btn">
                                 <i class="fas fa-user chat-content-header__action-icon"></i>
                             </li>
-                            <li class="chat-content-header__action-item">
+                            <li class="chat-content-header__action-item chat-content-header__action-item-more-action">
                                 <i class="fas fa-ellipsis-h chat-content-header__action-icon"></i>
+                                <ul class="chat-content-header__action-more-list">
+                                    <li class="chat-content-header__action-more-item">
+                                        <a href="#" class="chat-content-header__action-more-link">
+                                            <h3>Archive</h3>
+                                            <i class="fas fa-archive"></i>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="chat-content-header__action-more-item">
+                                        <a href="#" class="chat-content-header__action-more-link">
+                                            <h3>Mute</h3>
+                                            <i class="fas fa-volume-mute"></i>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="chat-content-header__action-more-item">
+                                        <a href="#" class="chat-content-header__action-more-link">
+                                            <h3>Delete</h3>
+                                            <i class="fas fa-archive"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
